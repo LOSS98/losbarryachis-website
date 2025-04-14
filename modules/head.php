@@ -12,6 +12,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
 
-    <link rel="stylesheet" href="assets/css/<?= $nom_page_style ?>.css">
     <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/<?= $nom_page_style ?>.css">
 </head>

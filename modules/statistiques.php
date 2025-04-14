@@ -16,7 +16,7 @@
         <div class="description">Nombre d'accidents</div>
     </div>
     <div class="statistique">
-        <div class="chiffre">10</div>
+        <div class="chiffre">Kevin</div>
         <div class="description">Le plus d'appel au standard </div>
     </div>
 </div>
