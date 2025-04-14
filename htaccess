@@ -1,0 +1,32 @@
+# Empêcher l'affichage des répertoires
+Options -Indexes
+
+# Désactiver les fichiers .htaccess visibles
+<Files .htaccess>
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Désactiver l'accès aux fichiers sensibles
+<FilesMatch "\.(env|log|ini|sh|bak|sql|dat|json|xml|yml|yaml|lock|conf|pem|crt|key)$">
+    Order Allow,Deny
+    Deny from all
+</FilesMatch>
+
+# Limiter l'accès au dossier 'ovh_nodes' avec un mot de passe
+AuthType Basic
+AuthName "Restricted Area"
+AuthUserFile "/home/robinfg/www/ovh/.htpasswd"
+Require valid-user
+
+# Désactiver le cache pour les fichiers sensibles
+<FilesMatch "\.(html|htm|php)$">
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</FilesMatch>
+

@@ -1,0 +1,364 @@
+@import 'variables';
+
+html, body {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: $font-text-primary, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $bg-color-primary;
+    color: $black;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    z-index: 5;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: 700;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1, h2, h3 {
+        font-family: $font-title-primary, sans-serif;
+    }
+    h4, h5, h6 {
+        font-family: $font-title-secondary, sans-serif;
+    }
+
+    h1 {
+        font-size: $h1;
+
+        @media screen and (max-width: 768px) {
+            font-size: $h1-phone;
+        }
+    }
+    h2 {
+        font-size: $h2;
+
+        @media screen and (max-width: 768px) {
+            font-size: $h2-phone;
+        }
+    }
+    h3 {
+        font-size: $h3;
+
+        @media screen and (max-width: 768px) {
+            font-size: $h3-phone;
+        }
+    }
+    h4 {
+        font-size: $h4;
+
+        @media screen and (max-width: 768px) {
+            font-size: $h4-phone;
+        }
+    }
+    h5 {
+        font-size: $h5;
+
+        @media screen and (max-width: 768px) {
+            font-size: $h5-phone;
+        }
+    }
+    h6 {
+        font-size: $h6;
+
+        @media screen and (max-width: 768px) {
+            font-size: $h6-phone;
+        }
+    }
+
+    p {
+        font-family: $font-text-primary, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin: 0;
+        padding: 0;
+        font-size: $p;
+
+        strong {
+            font-family: $font-text-primary, sans-serif;
+            font-weight: 400;
+            font-size: $h4;
+        }
+
+        @media screen and (max-width: 768px) {
+            font-size: $p-phone;
+        }
+    }
+
+    a {
+        font-family: $font-text-secondary, sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .main-container {
+        width: 80%;
+        margin: 0 auto;
+        max-width: 1450px;
+
+        @media screen and (max-width: 768px) {
+            width: 90%;
+            max-width: 600px;
+        }
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        width: 100%;
+        z-index: 20;
+        transition: .3s;
+        background-color: $bg-color-primary;
+
+        &.header-scroll {
+            box-shadow: $box-shadow;
+        }
+
+        nav {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .burger-menu {
+                display: none;
+
+                // Téléphone
+                @media screen and (max-width: 768px) {
+                    display: block;
+                    position: relative;
+                    width: 2.4rem;
+                    height: 1.4rem;
+                    cursor: pointer;
+
+                    span {
+                        position: absolute;
+                        width: 100%;
+                        height: 2px;
+                        background-color: $color-primary;
+                        transition: .3s;
+                        border-radius: 50rem;
+
+                        &:nth-child(1) {
+                            top: 0;
+                        }
+
+                        &:nth-child(2) {
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+
+                        &:nth-child(3) {
+                            bottom: 0;
+                        }
+                    }
+
+                    &.open span {
+                        &:nth-child(1) {
+                            top: 50%;
+                            transform: translateY(-50%) rotate(45deg);
+                        }
+
+                        &:nth-child(2) {
+                            opacity: 0;
+                        }
+
+                        &:nth-child(3) {
+                            top: 50%;
+                            transform: translateY(-50%) rotate(-45deg);
+                        }
+                    }
+                }
+            }
+
+            ul {
+                position: relative;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                margin: 0;
+                color: $white;
+                padding: .3rem 0 .1rem 0;
+
+                li {
+                    position: relative;
+                    padding: 1rem;
+                    color: $black;
+
+                    // On enlève le padding gauche du logo
+                    &:nth-of-type(1) {
+                        padding-left: 0;
+
+                        // Téléphone
+                        @media screen and (max-width: 768px) {
+                            padding: .7rem 0;
+                        }
+
+                        a::after {
+                            display: none;
+                        }
+                    }
+
+                    &:not(li:nth-of-type(1)) {
+                        // Téléphone
+                        @media screen and (max-width: 768px) {
+                            display: none;
+                        }
+                    }
+
+                    a {
+                        position: relative;
+                        padding: .5rem 1rem;
+                        //border: 1px solid $color-primary;
+                        font-size: $h6;
+
+
+                        &.logo-img {
+                            padding: 0;
+                            margin-right: 1rem;
+                            
+                            // Téléphone
+                            @media screen and (max-width: 768px) {
+                                margin-right: 0;
+                            }
+
+                            img {
+                                width: 4rem;
+                            }
+                        }
+
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            bottom: 0;
+                            left: 50%;
+                            transform: translateX(-50%);
+                            width: 0;
+                            height: 2px;
+                            background-color: $color-primary;
+                            transition: width .3s;
+                        }
+
+                        &.onPage::after, &:hover::after {
+                            width: 60%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        position: relative;
+        padding: 4.7rem 0 5.5rem 0;
+        background-color: $bg-color-primary;
+
+        &:nth-child(even) {
+            background-color: $bg-color-secondary;
+        }
+    }
+
+    .btn {
+        position: relative;
+        display: inline-block;
+        padding: .9rem 1.5rem;
+        box-shadow: $box-shadow;
+        color: $white;
+        border: none;
+        border-radius: 50rem;
+        cursor: pointer;
+        transition: .3s;
+        font-size: $font-size-text-secondary;
+
+        &.btn-primary {
+            background-color: $color-primary;
+
+            &:hover {
+                background-color: $color-primary-accentuation;
+            }
+        }
+
+        &.btn-primary-border {
+            background-color: transparent;
+            color: $color-primary;
+            border: 2px solid $color-primary;
+
+            &:hover {
+                background-color: $color-primary;
+                color: $bg-color-primary;
+            }
+        }
+
+        &.btn-secondary {
+            background-color: $color-secondary;
+
+            &:hover {
+                background-color: $color-secondary-accentuation;
+            }
+        }
+
+        &:hover {
+            transform: translateY(2px);
+        }
+        
+
+        ion-icon {
+            position: relative;
+            top: .15rem;
+            margin-left: .4rem;
+        }
+    }
+
+    .charm {
+        position: absolute;
+        width: 3.5rem;
+        height: auto;
+        -webkit-filter: $drop-shadow;
+        filter: $drop-shadow;
+        transition: .2s;
+        z-index: 2;
+    }
+
+    #statistiques {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.color-primary {
+    color: $color-primary;
+}
+.color-secondary {
+    color: $color-secondary;
+}
+.color-terciary {
+    color: $color-terciary;
+}
+
+// Barre de scroll
+/* Scrollbar styles for Webkit browsers */
+::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 50rem;
+}
+
+::-webkit-scrollbar-track {
+    background: $bg-color-secondary;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: $color-primary;
+    border-radius: 10px;
+    border: 2px solid $bg-color-primary;
+}
+
+/* Scrollbar styles for Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $color-primary $bg-color-secondary;
+}

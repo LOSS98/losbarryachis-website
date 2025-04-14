@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "TanNimbus";
+  font-style: normal;
+  src: url("../fonts/tan-nimbus/tan-nimbus.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Cranberry";
+  font-style: normal;
+  src: url("../fonts/Cranberry/Cranberry.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "LondrinaSolid";
+  font-style: normal;
+  src: url("../fonts/LondrinaSolid/LondrinaSolid-Regular.ttf") format("truetype"), url("../fonts/LondrinaSolid/LondrinaSolid-Bold.ttf") format("truetype"), url("../fonts/LondrinaSolid/LondrinaSolid-Light.ttf") format("truetype"), url("../fonts/LondrinaSolid/LondrinaSolid-Thin.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poetsen";
+  font-style: normal;
+  src: url("../fonts/poetsen-one/PoetsenOne-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+#sect1 .main-container .content h1 {
+  margin-bottom: 0.8rem;
+}
