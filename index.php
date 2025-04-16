@@ -67,7 +67,9 @@
             <div class="content">
                 <h1>Nos partenaires</h1>
                 <div>
-
+                    <div class="partenaire">
+                        <img src="assets/img/partenaires/Lyf.corail.png" alt="Logo de Lyf.">
+                    </div>
                 </div>
             </div>
         </div>
