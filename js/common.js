@@ -8,4 +8,10 @@ $(document).ready(function() {
             $('header').removeClass('header-scroll');
         }
     });
+
+    $('header .burger-menu').click(function() {
+        $('header .burger-menu').toggleClass('active');
+        $('header nav').toggleClass('active');
+        $('body').toggleClass('overflow-hidden');
+    });
 });

@@ -1,7 +1,7 @@
 <header>
     <nav class="main-container">
         <div class="burger-menu">
-            <span></span><span></span><span></span>
+            <div class="batons"><span></span><span></span><span></span></div>
         </div>
         <a href="index.php" class="logo-img"><img src="assets/img/logo-main.png" alt="Logo de la liste"><span>Los Barryachis</span></a>
         <ul>

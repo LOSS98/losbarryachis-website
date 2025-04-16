@@ -12,6 +12,10 @@ html, body {
     -ms-overflow-style: -ms-autohiding-scrollbar;
     z-index: 5;
 
+    &.overflow-hidden {
+        overflow: hidden;
+    }
+
     h1, h2, h3, h4, h5, h6 {
         font-weight: 700;
         font-style: normal;
@@ -117,7 +121,7 @@ html, body {
         padding: 1rem 0;
 
         @media screen and (max-width: 768px) {
-            padding: 2.5rem 0;
+            padding: 2.6rem 0;
         }
 
         &.header-scroll {
@@ -129,59 +133,134 @@ html, body {
             display: flex;
             justify-content: space-between;
             align-items: center;
+            max-height: 0;
+            transition: max-height .4s;
+
+            @media screen and (max-width: 768px) {
+                &.active {
+                    max-height: 35vh;
+                    height: auto;
+                    flex-direction: column;
+
+                    ul {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 2rem;
+                        margin-top: 4rem;
+
+                        li {
+                            opacity: 0;
+                            animation: fadeIn .4s .3s forwards;
+    
+                            &:nth-child(1) {
+                                animation-delay: .3s;
+                            }
+                            &:nth-child(2) {
+                                animation-delay: .4s;
+                            }
+                            &:nth-child(3) {
+                                animation-delay: .5s;
+                            }
+                            &:nth-child(4) {
+                                animation-delay: .6s;
+                            }
+                        }
+                    }
+                    @keyframes fadeIn {
+                        0% {
+                            opacity: 0;
+                            transform: translateY(-20px);
+                        }
+                        100% {
+                            opacity: 1;
+                            transform: translateY(0);
+                        }
+                    }
+                }
+            }
 
             .burger-menu {
                 display: none;
 
                 // Téléphone
                 @media screen and (max-width: 768px) {
-                    display: block;
-                    position: relative;
-                    width: 2.2rem;
-                    height: 1.3rem;
+                    display: inline-block;
+                    position: absolute;
+                    top: -1.1rem;
+                    left: 0;
+                    width: 2rem;
+                    height: 1.2rem;
+                    padding: .7rem;
                     cursor: pointer;
+                    z-index: 10;
 
-                    span {
-                        position: absolute;
+                    &.active {
+                        .batons {
+                            span {
+                                &:nth-child(1) {
+                                    top: 50%;
+                                    transform: translateY(-50%) rotate(45deg);
+                                }
+        
+                                &:nth-child(2) {
+                                    opacity: 0;
+                                }
+        
+                                &:nth-child(3) {
+                                    top: 50%;
+                                    transform: translateY(-50%) rotate(-45deg);
+                                }
+                            }
+                        }
+                    }
+
+                    .batons {
+                        position: relative;
                         width: 100%;
-                        height: 2px;
-                        background-color: $color-primary;
-                        transition: .3s;
-                        border-radius: 50rem;
+                        height: 100%;
 
-                        &:nth-child(1) {
-                            top: 0;
+                        span {
+                            position: absolute;
+                            width: 100%;
+                            height: 2px;
                             background-color: $color-primary;
+                            transition: .3s;
+                            border-radius: 50rem;
+    
+                            &:nth-child(1) {
+                                top: 0;
+                                background-color: $color-secondary;
+                            }
+    
+                            &:nth-child(2) {
+                                top: 50%;
+                                transform: translateY(-50%);
+                                background-color: $color-primary;
+                            }
+    
+                            &:nth-child(3) {
+                                bottom: 0;
+                                background-color: $color-terciary;
+                            }
                         }
-
-                        &:nth-child(2) {
-                            top: 50%;
-                            transform: translateY(-50%);
-                            background-color: $color-secondary;
-                        }
-
-                        &:nth-child(3) {
-                            bottom: 0;
-                            background-color: $color-terciary;
+    
+                        &.open span {
+                            &:nth-child(1) {
+                                top: 50%;
+                                transform: translateY(-50%) rotate(45deg);
+                            }
+    
+                            &:nth-child(2) {
+                                opacity: 0;
+                            }
+    
+                            &:nth-child(3) {
+                                top: 50%;
+                                transform: translateY(-50%) rotate(-45deg);
+                            }
                         }
                     }
-
-                    &.open span {
-                        &:nth-child(1) {
-                            top: 50%;
-                            transform: translateY(-50%) rotate(45deg);
-                        }
-
-                        &:nth-child(2) {
-                            opacity: 0;
-                        }
-
-                        &:nth-child(3) {
-                            top: 50%;
-                            transform: translateY(-50%) rotate(-45deg);
-                        }
-                    }
-                }
+                } 
             }
 
             .logo-img {
@@ -201,10 +280,14 @@ html, body {
 
                 @media screen and (max-width: 768px) {
                     position: absolute;
-                    width: 100%;
+                    width: 80%;
                     left: 50%;
-                    top: -1.3rem;
+                    top: -1.5rem;
                     transform: translateX(-50%);
+
+                    img {
+                        width: 3.2rem;
+                    }
                 }
             }
 
