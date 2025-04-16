@@ -2,15 +2,19 @@
 $color-primary: #FAAD47;
 $color-primary-accentuation: #e69e40;
 $color-secondary: #8A35DF;
-$color-secondary-accentuation: #7a2fc6;
+$color-secondary-accentuation: #732cb9;
 $color-terciary: #1E662C;
-$color-terciary-accentuation: #195324;
+$color-terciary-accentuation: #1b5a27;
 
 $white: #f2f2f2;
 $black: #3d3d3d;
 
 $bg-color-primary: #F6F2DB;
 $bg-color-secondary: #f1edd5;
+$bg-color-terciary: #e5e0cb;
+
+$bg-gradient-primary: linear-gradient(90deg, rgba(138, 53, 223, 1) 0%, rgba(30, 102, 44, 1) 50%, rgba(250, 173, 71, 1) 100%);
+
 
 // Polices d'écriture
 @font-face {
@@ -64,8 +68,8 @@ $h4-phone: 1.4rem;
 $h5-phone: 1.25em;
 $h6-phone: 1.15rem;
 $p-phone: 1rem;
-$small-phone: 0.8rem;
-$font-size-text-secondary-phone: 1.1rem;
+$small-phone: 0.7rem;
+$font-size-text-secondary-phone: 1.2rem;
 
 // Effet
 $box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;

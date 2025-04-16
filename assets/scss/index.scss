@@ -1,8 +1,8 @@
 @import 'variables';
 
 #sect1 {
-    height: 85vh;
-    padding: 0;
+    padding: 1.5rem 0;
+    min-height: 85vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,11 +25,26 @@
         z-index: -1;
     }
 
+    @media screen and (max-width: 768px) {
+        min-height: 70vh;
+    }
+
 
     .content {
         position: relative;
-        width: 38%;
+        width: 42%;
         margin: auto 0;
+
+        .btns {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+
+            @media screen and (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
 
         // Version téléphone
         @media screen and (max-width: 768px) {
@@ -46,10 +61,80 @@
         }
     }
 }
-#sect2 {
+#banniere_verte {
+    position: relative;
+    padding: 5.4rem 0;
+    background-color: $color-terciary-accentuation;
+    color: $white;
 
+    &::before {
+        content: "";
+        position: absolute;
+        top: -29px;
+        left: 0;
+        width: 100%;
+        height: 59px;
+        background-image: url('../img/decors/fleur_verte_petite.png');
+        background-repeat: repeat;
+        z-index: 5;
+        -webkit-filter: $drop-shadow;
+        filter: $drop-shadow;
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -29px;
+        left: 0;
+        width: 100%;
+        height: 59px;
+        background-image: url('../img/decors/fleur_verte_petite.png');
+        background-repeat: repeat;
+        z-index: 5;
+        -webkit-filter: $drop-shadow;
+        filter: $drop-shadow;
+    }
+
+    .main-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .info {
+            text-align: center;
+
+            @media screen and (max-width: 768px) {
+                width: 100%;
+                margin-bottom: 2.5rem;
+
+                &:nth-last-of-type(1) {
+                    margin-bottom: 0;
+                }
+            }
+
+            .icon {
+                font-size: $h3;
+                margin-bottom: .3rem;
+
+                @media screen and (max-width: 768px) {
+                    font-size: $h3-phone;
+                }
+            }
+            .description {
+                font-size: $h6;
+
+                @media screen and (max-width: 768px) {
+                    font-size: $h6-phone;
+                }
+            }
+        }
+    }
+
+
+}
+#sect2 {
     .content {
         text-align: center;
+        margin: 1.75rem 0;
 
         h1 {
             margin-bottom: 3rem;
@@ -61,6 +146,8 @@
             width: 70%;
             border: none;
             border-radius: 16px;
+            box-shadow: $box-shadow;
+            -webkit-filter: $drop-shadow;
         }
     }
 }

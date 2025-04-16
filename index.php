@@ -17,10 +17,39 @@
             <div class="content">
                 <h1>Bienvenue <br>au <span class="color-secondary">Me</span><span class="color-terciary">xiq</span><span class="color-primary">ue !</span></h1>
                 <p><strong>Nous vous souhaitons à toutes et tous une très bonne semaine de campagne.</strong></p>
-                <a href="programme.html" class="btn btn-primary">Voir le programme <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                <div class="btns">
+                    <a href="programme.php" class="btn btn-secondary">Voir le programme <ion-icon name="calendar"></ion-icon></a>
+                    <a href="teams.php" class="btn btn-terciary">Nos teams <ion-icon name="people"></ion-icon></a>
+                </div>
+                
             </div>
         </div>
     </section>
+
+    <div id="banniere_verte">
+        <div class="main-container">
+            <div class="info">
+                <div class="icon">1895</div>
+                <div class="description">Crêpes commandées</div>
+            </div>
+            <div class="info">
+                <div class="icon">57</div>
+                <div class="description">Trajets en taxi</div>
+            </div>
+            <div class="info">
+                <div class="icon">368</div>
+                <div class="description">Appels au standard</div>
+            </div>
+            <div class="info">
+                <div class="icon">10</div>
+                <div class="description">Nombre d'accidents</div>
+            </div>
+            <div class="info">
+                <div class="icon">Kevin</div>
+                <div class="description">Le plus d'appel au standard </div>
+            </div>
+        </div>
+    </div>
 
     <section id="sect2">
         <div class="main-container">
@@ -30,6 +59,8 @@
             </div>
         </div>
     </section>
+
+    <?php include 'modules/statistiques.php' ?>
 
     <section id="sect2">
         <div class="main-container">
