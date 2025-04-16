@@ -17,7 +17,16 @@
                 <h1>Les équipes</h1>
                 <!-- <p><strong>Ce sont celles et ceux qui vont vous faire rêver pendant cette semaine de campagne</strong></p> -->
                 <div id="teams">
-                    
+                    <div class="team"></div>
+                    <div class="team"></div>
+                    <div class="team"></div>
+                    <div class="team"></div>
+                    <div class="team"></div>
+                    <div class="team"></div>
+                    <div class="team"></div>
+                    <div class="team"></div>
+                    <div class="team"></div>
+                    <div class="team"></div>
                 </div>
             </div>
         </div>

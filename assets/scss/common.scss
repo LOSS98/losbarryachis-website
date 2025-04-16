@@ -341,10 +341,9 @@ html, body {
         }
 
         &.btn-primary {
-            //background-color: $color-primary;
             background-color: $color-primary;
 
-            &:hover::before{
+            &:hover{
                 background-color: $color-primary-accentuation;
             }
         }
@@ -422,8 +421,8 @@ html, body {
 
     #statistiques {
         position: relative;
-        padding: 5.4rem 0;
-        background-color: $color-secondary-accentuation;
+        padding: 6.5rem 0 6.2rem 0;
+        background-color: $color-terciary-accentuation;
         color: $white;
 
         &::before {
@@ -433,7 +432,7 @@ html, body {
             left: 0;
             width: 100%;
             height: 59px;
-            background-image: url('../img/decors/fleur_violette_petit.png');
+            background-image: url('../img/decors/fleur_verte_petite.png');
             background-repeat: repeat;
             z-index: 5;
             -webkit-filter: $drop-shadow;
@@ -446,7 +445,7 @@ html, body {
             left: 0;
             width: 100%;
             height: 59px;
-            background-image: url('../img/decors/fleur_violette_petit.png');
+            background-image: url('../img/decors/fleur_verte_petite.png');
             background-repeat: repeat;
             z-index: 5;
             -webkit-filter: $drop-shadow;

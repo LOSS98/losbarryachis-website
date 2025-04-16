@@ -339,7 +339,7 @@ html .btn, body .btn {
 html .btn.btn-primary, body .btn.btn-primary {
   background-color: #FAAD47;
 }
-html .btn.btn-primary:hover::before, body .btn.btn-primary:hover::before {
+html .btn.btn-primary:hover, body .btn.btn-primary:hover {
   background-color: #e69e40;
 }
 html .btn.btn-primary-border, body .btn.btn-primary-border {
@@ -401,8 +401,8 @@ html .charm, body .charm {
 }
 html #statistiques, body #statistiques {
   position: relative;
-  padding: 5.4rem 0;
-  background-color: #732cb9;
+  padding: 6.5rem 0 6.2rem 0;
+  background-color: #1b5a27;
   color: #f2f2f2;
 }
 html #statistiques::before, body #statistiques::before {
@@ -412,7 +412,7 @@ html #statistiques::before, body #statistiques::before {
   left: 0;
   width: 100%;
   height: 59px;
-  background-image: url("../img/decors/fleur_violette_petit.png");
+  background-image: url("../img/decors/fleur_verte_petite.png");
   background-repeat: repeat;
   z-index: 5;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -425,7 +425,7 @@ html #statistiques::after, body #statistiques::after {
   left: 0;
   width: 100%;
   height: 59px;
-  background-image: url("../img/decors/fleur_violette_petit.png");
+  background-image: url("../img/decors/fleur_verte_petite.png");
   background-repeat: repeat;
   z-index: 5;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));

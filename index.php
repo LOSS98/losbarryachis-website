@@ -27,27 +27,16 @@
     </section>
 
     <div id="banniere_verte">
-        <div class="main-container">
-            <div class="info">
-                <div class="icon">1895</div>
-                <div class="description">Crêpes commandées</div>
-            </div>
-            <div class="info">
-                <div class="icon">57</div>
-                <div class="description">Trajets en taxi</div>
-            </div>
-            <div class="info">
-                <div class="icon">368</div>
-                <div class="description">Appels au standard</div>
-            </div>
-            <div class="info">
-                <div class="icon">10</div>
-                <div class="description">Nombre d'accidents</div>
-            </div>
-            <div class="info">
-                <div class="icon">Kevin</div>
-                <div class="description">Le plus d'appel au standard </div>
-            </div>
+        <div class="carousel">
+            <?php
+            $images = ['Achille.jpg', 'Amandine.jpg', 'Anna.jpg', 'Benjamin.jpg', 'Brieuc.jpg', 'Célia.jpg', 'Enzo.jpg', 'Gwladys.jpg', 'Hugo.jpg', 'Isma.jpg', 'Jeanne.jpg', 'Julian.jpg', 'Justin.jpg', 'Khalil.jpg', 'Lilian_AVM.jpg', 'Lilian_ME.jpg', 'Lilou.jpg', 'Lison.jpg', 'Loan.jpg', 'Lorick.jpg', 'Louise.jpg', 'Lucas.jpg', 'Ludo.jpg', 'Luka.jpg', 'Léo.jpg', 'Macéo.jpg', 'Marie.jpg', 'Mathilde.jpg', 'Mathis.jpg', 'Max.jpg', 'Mia.jpg', 'Mikael.jpg', 'Nils.jpg', 'Noémie.jpg', 'Paul.jpg', 'Pierre.jpg', 'Pierrette.jpg', 'Robin.jpg', 'Thibaut.jpg', 'Tim.jpg', 'TOM_G.jpg', 'tom_p.jpg', 'Ugo_2.jpg', 'Valentine_2.jpg', 'Zach.jpg', 'Églantine.jpg'];
+
+            foreach ($images as $image) {
+                echo '<div class="carousel-item">';
+                echo '<img src="assets/img/pp/' . htmlspecialchars($image) . '" alt="Bannière verte ' . htmlspecialchars(pathinfo($image, PATHINFO_FILENAME)) . '">';
+                echo '</div>';
+            }
+            ?>
         </div>
     </div>
 
@@ -74,7 +63,7 @@
             </div>
         </div>
     </section>
-
+    
     <?php include 'modules/footer.php'; ?>
 </body>
 </html>
