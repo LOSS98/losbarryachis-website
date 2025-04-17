@@ -152,15 +152,15 @@
 
 #sect3 .content {
   text-align: center;
-  margin: 3rem 0 1rem 0;
+  margin: 3.5rem 0 1.5rem 0;
 }
 @media screen and (max-width: 768px) {
   #sect3 .content {
-    margin: 3rem 0 0 0;
+    margin: 3.5rem 0 1rem 0;
   }
 }
 #sect3 .content h1 {
-  margin-bottom: 3.5rem;
+  margin-bottom: 4rem;
 }
 #sect3 .content .partenaires {
   display: flex;
@@ -168,6 +168,10 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-bottom: 3rem;
+}
+#sect3 .content .partenaires:nth-last-of-type(1) {
+  margin-bottom: 0;
 }
 @media screen and (max-width: 768px) {
   #sect3 .content .partenaires .partenaire {
@@ -176,7 +180,6 @@
 }
 #sect3 .content .partenaires .partenaire img {
   width: 190px;
-  border-radius: 16px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }

@@ -64,8 +64,13 @@
                     <a href="https://brasserielepresident.fr/"target="_blank"class="partenaire">
                         <img src="assets/img/partenaires/lepresident.png" alt="Logo de Le Président">
                     </a>
+                </div>
+                <div class="partenaires">
                     <a href="https://www.intersport.fr/" target="_blank"class="partenaire">
                         <img src="assets/img/partenaires/intersport.png" alt="Logo d'intersport">
+                    </a>
+                    <a href="https://www.facebook.com/p/FripChic-100087309256616" target="_blank"class="partenaire">
+                        <img src="assets/img/partenaires/fripchic.png" alt="Logo de frip'chic">
                     </a>
                 </div>
             </div>
