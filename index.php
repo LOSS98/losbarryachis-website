@@ -30,7 +30,6 @@
         <div class="carousel">
             <?php
             $images = ['Achille.jpg', 'Amandine.jpg', 'Anna.jpg', 'Benjamin.jpg', 'Brieuc.jpg', 'Célia.jpg', 'Enzo.jpg', 'Gwladys.jpg', 'Hugo.jpg', 'Isma.jpg', 'Jeanne.jpg', 'Julian.jpg', 'Justin.jpg', 'Khalil.jpg', 'Lilian_AVM.jpg', 'Lilian_ME.jpg', 'Lilou.jpg', 'Lison.jpg', 'Loan.jpg', 'Lorick.jpg', 'Louise.jpg', 'Lucas.jpg', 'Ludo.jpg', 'Luka.jpg', 'Léo.jpg', 'Macéo.jpg', 'Marie.jpg', 'Mathilde.jpg', 'Mathis.jpg', 'Max.jpg', 'Mia.jpg', 'Mikael.jpg', 'Nils.jpg', 'Noémie.jpg', 'Paul.jpg', 'Pierre.jpg', 'Pierrette.jpg', 'Robin.jpg', 'Thibaut.jpg', 'Tim.jpg', 'TOM_G.jpg', 'tom_p.jpg', 'Ugo_2.jpg', 'Valentine_2.jpg', 'Zach.jpg', 'Églantine.jpg'];
-            $images= [];
             foreach ($images as $image) {
                 echo '<div class="carousel-item">';
                 echo '<img src="assets/img/pp/' . htmlspecialchars($image) . '" alt="Bannière verte ' . htmlspecialchars(pathinfo($image, PATHINFO_FILENAME)) . '">';
@@ -51,14 +50,23 @@
 
     <?php include 'modules/statistiques.php' ?>
 
-    <section id="sect2">
+    <section id="sect3">
         <div class="main-container">
             <div class="content">
                 <h1>Nos partenaires</h1>
-                <div>
-                    <div class="partenaire">
+                <div class="partenaires">
+                    <a href="https://www.lyf.eu/fr/" target="_blank"class="partenaire">
                         <img src="assets/img/partenaires/Lyf.corail.png" alt="Logo de Lyf.">
-                    </div>
+                    </a>
+                    <a href="https://www.uphf.fr/vie-campus/bien-vivre/centre-sante"target="_blank"class="partenaire">
+                        <img src="assets/img/partenaires/mse.png" alt="Logo de MSE">
+                    </a>
+                    <a href="https://brasserielepresident.fr/"target="_blank"class="partenaire">
+                        <img src="assets/img/partenaires/lepresident.png" alt="Logo de Le Président">
+                    </a>
+                    <a href="https://www.intersport.fr/" target="_blank"class="partenaire">
+                        <img src="assets/img/partenaires/intersport.png" alt="Logo d'intersport">
+                    </a>
                 </div>
             </div>
         </div>

@@ -130,10 +130,15 @@
 
 #sect2 .content {
   text-align: center;
-  margin: 1.75rem 0;
+  margin: 3rem 0 2.5rem 0;
+}
+@media screen and (max-width: 768px) {
+  #sect2 .content {
+    margin: 3rem 0;
+  }
 }
 #sect2 .content h1 {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
 }
 #sect2 .content iframe {
   aspect-ratio: 16/9;
@@ -143,4 +148,43 @@
   border-radius: 16px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#sect3 .content {
+  text-align: center;
+  margin: 3rem 0 1rem 0;
+}
+@media screen and (max-width: 768px) {
+  #sect3 .content {
+    margin: 3rem 0 0 0;
+  }
+}
+#sect3 .content h1 {
+  margin-bottom: 3.5rem;
+}
+#sect3 .content .partenaires {
+  display: flex;
+  gap: 3em;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  #sect3 .content .partenaires .partenaire {
+    width: 100%;
+  }
+}
+#sect3 .content .partenaires .partenaire img {
+  width: 190px;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+#sect3 .content .partenaires .partenaire img:hover {
+  transform: scale(1.05);
+}
+@media screen and (max-width: 768px) {
+  #sect3 .content .partenaires .partenaire img {
+    width: 160px;
+  }
 }
