@@ -30,7 +30,7 @@
         <div class="carousel">
             <?php
             $images = ['Achille.jpg', 'Amandine.jpg', 'Anna.jpg', 'Benjamin.jpg', 'Brieuc.jpg', 'Célia.jpg', 'Enzo.jpg', 'Gwladys.jpg', 'Hugo.jpg', 'Isma.jpg', 'Jeanne.jpg', 'Julian.jpg', 'Justin.jpg', 'Khalil.jpg', 'Lilian_AVM.jpg', 'Lilian_ME.jpg', 'Lilou.jpg', 'Lison.jpg', 'Loan.jpg', 'Lorick.jpg', 'Louise.jpg', 'Lucas.jpg', 'Ludo.jpg', 'Luka.jpg', 'Léo.jpg', 'Macéo.jpg', 'Marie.jpg', 'Mathilde.jpg', 'Mathis.jpg', 'Max.jpg', 'Mia.jpg', 'Mikael.jpg', 'Nils.jpg', 'Noémie.jpg', 'Paul.jpg', 'Pierre.jpg', 'Pierrette.jpg', 'Robin.jpg', 'Thibaut.jpg', 'Tim.jpg', 'TOM_G.jpg', 'tom_p.jpg', 'Ugo_2.jpg', 'Valentine_2.jpg', 'Zach.jpg', 'Églantine.jpg'];
-
+            $images= [];
             foreach ($images as $image) {
                 echo '<div class="carousel-item">';
                 echo '<img src="assets/img/pp/' . htmlspecialchars($image) . '" alt="Bannière verte ' . htmlspecialchars(pathinfo($image, PATHINFO_FILENAME)) . '">';
@@ -43,7 +43,7 @@
     <section id="sect2">
         <div class="main-container">
             <div class="content">
-                <h1>Notre film</h1>
+                <h1>Nous voir et nous revoir</h1>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/09SE4u4JpGk?si=q5sqklbIQShrNyM1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>

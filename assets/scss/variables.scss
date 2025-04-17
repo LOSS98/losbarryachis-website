@@ -13,7 +13,7 @@ $bg-color-primary: #F6F2DB;
 $bg-color-secondary: #f1edd5;
 $bg-color-terciary: #e5e0cb;
 
-$bg-gradient-primary: linear-gradient(90deg, rgba(138, 53, 223, 1) 0%, rgba(30, 102, 44, 1) 50%, rgba(250, 173, 71, 1) 100%);
+$bg-gradient-primary: linear-gradient(90deg,rgba(30, 102, 44, 1) 0%, rgba(30, 102, 44, 1) 33%, rgba(250, 173, 71, 1) 33%, rgba(250, 173, 71, 1) 66%, rgba(138, 53, 223, 1) 66%, rgba(138, 53, 223, 1) 100%);
 
 
 // Polices d'écriture
@@ -58,7 +58,7 @@ $h4: 1.5rem;
 $h5: 1.35rem;
 $h6: 1.2rem;
 $p: 1rem;
-$small: 0.8rem;
+$small: 0.9rem;
 $font-size-text-secondary: 1.1rem;
 
 $h1-phone: 2.6rem;
@@ -68,7 +68,7 @@ $h4-phone: 1.4rem;
 $h5-phone: 1.25em;
 $h6-phone: 1.15rem;
 $p-phone: 1rem;
-$small-phone: 0.7rem;
+$small-phone: 0.8rem;
 $font-size-text-secondary-phone: 1.2rem;
 
 // Effet

@@ -13,12 +13,27 @@
                     <img src="assets/img/logo-main.png" alt="Logo de la liste <?= NOM_LISTE ?>">
                 </div>
                 <div class="footer-text">
-                    <h2><?= NOM_LISTE ?></h2>
+                    <h3><?= NOM_LISTE ?></h3>
                 </div>
             </div>
-            <div class="footer-copyright">
-                <p>&copy; <?= date('Y') ?> - Tous droits réservés</p>
+            <div class="footer-social">
+                <h4>Nos réseaux</h4>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/" target="_blank" class="social-icon"><ion-icon name="logo-instagram"></ion-icon>@losbarryachis</a>
+                    <a href="https://www.youtube.com/" target="_blank" class="social-icon"><ion-icon name="logo-youtube"></ion-icon>@losbarryachis</a>
+                    <a href="https://www.tiktok.com/" target="_blank" class="social-icon"><ion-icon name="logo-tiktok"></ion-icon>@los_barryachis</a>
+                </div>
             </div>
+            <div class="footer-app">
+                <h4>Télécharger l'appli</h4>
+                <div class="app-imgs">
+                    <a href="https://apps.apple.com/fr/app/id123456789" target="_blank" class="app-img"><img src="assets/img/store/appstore.png" alt=""></a>
+                    <a href="https://play.google.com/store/apps/details?id=com.example.app" target="_blank" class="app-img"><img src="assets/img/store/playstore.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; <?= date('Y') ?> - Pas vraiment de droits réservés</p>
         </div>
     </div>
 </footer>

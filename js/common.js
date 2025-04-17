@@ -12,6 +12,10 @@ $(document).ready(function() {
     $('header .burger-menu').click(function() {
         $('header .burger-menu').toggleClass('active');
         $('header nav').toggleClass('active');
-        $('body').toggleClass('overflow-hidden');
     });
+
+    // rafraichir la page si l'utilisateur change de dimension d'écran
+    // $(window).resize(function() {
+    //     location.reload();
+    // });
 });
