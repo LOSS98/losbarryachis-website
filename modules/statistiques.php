@@ -26,17 +26,19 @@ $statistics = fetchStatistics();
 
 <div id="statistiques">
     <div class="main-container">
-        <?php if (!empty($statistics['data'])): ?>
-            <?php foreach ($statistics['data'] as $stat): ?>
-                <div class="statistique">
-                    <div class="chiffre"><?= htmlspecialchars($stat['value']) ?></div>
-                    <div class="description"><?= htmlspecialchars($stat['label']) ?></div>
+        <div class="stats-grid">
+            <?php if (!empty($statistics['data'])): ?>
+                <?php foreach ($statistics['data'] as $stat): ?>
+                    <div class="statistique">
+                        <div class="chiffre"><?= htmlspecialchars($stat['value']) ?></div>
+                        <div class="description"><?= htmlspecialchars($stat['label']) ?></div>
+                    </div>
+                <?php endforeach; ?>
+            <?php else: ?>
+                <div class="no-statistics">
+                    <p>Aucune statistique disponible pour le moment.</p>
                 </div>
-            <?php endforeach; ?>
-        <?php else: ?>
-            <div class="no-statistics">
-                <p>Aucune statistique disponible pour le moment.</p>
-            </div>
-        <?php endif; ?>
+            <?php endif; ?>
+        </div>
     </div>
 </div>
