@@ -537,6 +537,26 @@ html .btn, body .btn {
   html .btn, body .btn {
     font-size: 1.2rem;
   }
+  header nav .btn-primary {
+    display: block !important;
+    position: absolute;
+    top: 60px;
+    right: 15px;
+    font-size: 14px;
+    padding: 5px 10px;
+    z-index: 100;
+  }
+
+  header nav .btn-primary a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+  }
+
+  header nav .btn-primary a ion-icon {
+    margin-left: 5px;
+  }
 }
 html .btn.btn-primary, body .btn.btn-primary {
   background-color: #FAAD47;

@@ -1,42 +1,60 @@
 $(document).ready(function(){
     $('.carousel').slick({
-      slidesToShow: 8,
-      slidesToScroll: 1,
-      autoplay: true,
-      autoplaySpeed: 0,
-      infinite: true,
-      arrows: false,
-      dots: false,
-      pauseOnHover: false,
-      cssEase: 'linear',
-      speed: 3000,
-      pauseOnFocus: false
+        slidesToShow: 8,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 0,
+        infinite: true,
+        arrows: false,
+        dots: false,
+        pauseOnHover: false,
+        cssEase: 'linear',
+        speed: 3000,
+        pauseOnFocus: false,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 6
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 3
+                }
+            }
+        ]
     });
 
-    // sur téléphone
-    if ($(window).width() < 768) {
-      $('.carousel').slick('slickSetOption', 'slidesToShow', 3, true);
-    }
-
-    $('.carousel img').on('click', function() {
-        var $img = $(this);
+    $('.carousel-item').on('click', function() {
+        var $item = $(this);
+        var $img = $item.find('img');
+        var $nickname = $item.find('.nickname');
         var posX = $img.offset().left + $img.width() / 2;
         var posY = $img.offset().top + $img.height() / 2;
 
         confetti({
-          particleCount: 100,
-          spread: 60,
-          origin: {
-            x: posX / window.innerWidth,
-            y: (posY - window.scrollY) / window.innerHeight
-          }
+            particleCount: 100,
+            spread: 60,
+            origin: {
+                x: posX / window.innerWidth,
+                y: (posY - window.scrollY) / window.innerHeight
+            }
         });
 
-        $img.fadeOut(300, function() {
-          // comeback after 2s
-          setTimeout(function() {
-            $img.fadeIn(300);
-          }, 2500);
-        });
+        $img.css('visibility', 'hidden');
+        $nickname.css('visibility', 'hidden');
+
+        setTimeout(function() {
+            $img.css('visibility', 'visible');
+            $nickname.css('visibility', 'visible');
+        }, 2500);
     });
-  });
+});
