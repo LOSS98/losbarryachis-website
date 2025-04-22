@@ -1,0 +1,11 @@
+services:
+  losbarryachis-web:
+    build: .
+    container_name: losbarryachis-web
+    restart: always
+    ports:
+      - "3000:9000"
+    volumes:
+      - /home/khalil/losbarryachis:/var/www/html
+    environment:
+      - TZ=Europe/Paris
