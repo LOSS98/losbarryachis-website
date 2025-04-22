@@ -28,6 +28,6 @@ jobs:
 
       - name: Set up Docker and deploy
         run: |
-          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /home/khalil/losbarryachis && docker-compose down || true"
-          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /home/khalil/losbarryachis && docker-compose build"
-          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /home/khalil/losbarryachis && docker-compose up -d"
+          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /home/khalil/losbarryachis && docker compose down || true"
+          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /home/khalil/losbarryachis && docker compose build"
+          ssh -p ${{ secrets.SSH_PORT }} ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /home/khalil/losbarryachis && docker compose up -d"
