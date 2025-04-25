@@ -197,20 +197,45 @@
 
                         </div>
                     </div>
-                    
+
 
                     <div class="team">
                         <div class="team-img"><img src="assets/img/team/inclusion.webp"></div>
                         <div class="team-promesses">
                             <h3>Nos engagements</h3>
                             <p>
-                                À chaque événement, les participant·e·s seront accueillis avec le sourire, pour que personne ne se sente mis·e de côté, même en arrivant seul·e.
+                                À chaque événement, les participant·e·s seront accueillis avec le sourire, pour que personne ne se sente mis·e de côté.
                             </p>
                             <p>
-                                Besoin d’un coup de main, de parler, ou de souffler ? On sera toujours dispo pendant les événements pour écouter et aider à passer un bon moment.
+                                Besoin d'un coup de main, de parler, ou de souffler ? On sera toujours dispo pendant les événements pour écouter et aider à passer un bon moment.
+                            </p>
+                            <strong>Inclusion des FISA :</strong>
+                            <p>
+                                Nous nous engageons pour une inclusion totale des élèves en FISA dans la vie de l'INSA. Nos événements seront pensés pour s'adapter à leur rythme d'alternance, avec des canaux de communication dédiés et une valorisation des temps forts du BDE, en travaillant avec les référents FISA de notre liste.
                             </p>
                             <h3>Les membres</h3>
                             <p>Robin (Représentant et développeur de talent)</p>
+                        </div>
+                    </div>
+
+                    <div class="team">
+                        <div class="team-img"><img src="assets/img/team/bdi.webp"></div>
+                        <div class="team-promesses">
+                            <h3>Nos engagements</h3>
+                            <p>
+                                Le BDI s'engage à améliorer le site du BDE et à développer une appli mobile pour centraliser les infos sur les événements, intégrer un système de shotgun et bien plus.
+                            </p>
+                            <p>Nos engagements concrets :</p>
+                            <ul>
+                                <li>Aider les particuliers et assos à publier leurs applis sur l'App Store et le Play Store</li>
+                                <li>Développer des projets numériques pour améliorer l'expérience étudiante</li>
+                                <li>Offrir un support technique aux différentes équipes du BDE</li>
+                            </ul>
+                            <h3>Les membres</h3>
+                            <p>
+                                Mikael (Président)
+                            </p>
+
                         </div>
                     </div>
 
