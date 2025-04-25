@@ -9,7 +9,7 @@ $(document).ready(function(){
         dots: false,
         pauseOnHover: false,
         cssEase: 'linear',
-        speed: 2000,
+        speed: 1500,
         pauseOnFocus: false,
         responsive: [
             {

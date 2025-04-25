@@ -68,6 +68,22 @@
     flex-direction: column;
   }
 }
+#sect1 .content .btns .btn-taxi {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  #sect1 .content .btns .btn-taxi {
+    display: inline;
+  }
+}
+#sect1 .content .btns .btn-team {
+  display: block;
+}
+@media screen and (max-width: 768px) {
+  #sect1 .content .btns .btn-team {
+    display: none;
+  }
+}
 @media screen and (max-width: 768px) {
   #sect1 .content {
     padding-top: 2rem;

@@ -45,6 +45,23 @@
             @media screen and (max-width: 768px) {
                 flex-direction: column;
             }
+
+            .btn-taxi {
+                display: none;
+
+                @media screen and (max-width: 768px) {
+                    display: inline;
+                }
+            }
+
+            .btn-team {
+                display: block;
+
+                @media screen and (max-width: 768px) {
+                    display: none;
+                    
+                }
+            }
         }
 
         // Version téléphone

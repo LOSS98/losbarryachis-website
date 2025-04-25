@@ -19,8 +19,9 @@ $nom_page_style = 'index';
             <p><strong>Nous vous souhaitons à toutes et tous une très bonne semaine de campagne.</strong></p>
             <div class="btns">
                 <a href="programme.php" class="btn btn-secondary">Voir le programme <ion-icon name="calendar"></ion-icon></a>
-                <a href="shotguns.php" class="btn btn-primary">Shotguns <ion-icon name="rocket"></ion-icon></a>
-                <a href="teams.php" class="btn btn-terciary">Nos teams <ion-icon name="people"></ion-icon></a>
+                <a href="shotguns.php" class="btn btn-terciary">Shotguns <ion-icon name="rocket"></ion-icon></a>
+                <a href="teams.php" class="btn btn-primary btn-team">Nos teams <ion-icon name="people"></ion-icon></a>
+                <a href="https://mexigo.losbarryachis.fr" class="btn btn-primary btn-taxi" target="_blank">Taxi Mexigo <ion-icon name="car"></ion-icon></a>
             </div>
 
         </div>

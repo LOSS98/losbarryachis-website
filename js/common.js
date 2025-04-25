@@ -14,8 +14,8 @@ $(document).ready(function() {
         $('header nav').toggleClass('active');
     });
 
-    // rafraichir la page si l'utilisateur change de dimension d'écran
-    // $(window).resize(function() {
-    //     location.reload();
-    // });
+    //rafraichir la page si l'utilisateur change de dimension d'écran
+    $(window).resize(function() {
+        location.reload();
+    });
 });
