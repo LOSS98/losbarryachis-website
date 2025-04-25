@@ -11,6 +11,13 @@
 <body>
     <?php include 'modules/header.php'; ?>
 
+    <section id="sect1">
+        <div class="main-container">
+            <div class="content">
+                <div id="programme"><img src="assets/img/planning/planning.webp" ></div>
+            </div>
+        </div>
+    </section>
 
     <?php include 'modules/footer.php'; ?>
 </body>

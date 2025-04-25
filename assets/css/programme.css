@@ -1,0 +1,24 @@
+@media screen and (max-width: 768px) {
+  #sect1 {
+    padding-top: 2rem;
+  }
+}
+#sect1 #programme {
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  #sect1 #programme {
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+}
+#sect1 #programme img {
+  width: 100%;
+  border-radius: 16px;
+}
+@media screen and (max-width: 768px) {
+  #sect1 #programme img {
+    height: 80vh;
+    width: auto;
+  }
+}

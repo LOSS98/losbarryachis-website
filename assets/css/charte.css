@@ -22,19 +22,19 @@
   src: url("../fonts/poetsen-one/PoetsenOne-Regular.ttf") format("truetype");
   font-weight: 400;
 }
-#charte h2 {
+#sect1 h2 {
   margin-bottom: 2rem;
 }
-#charte h3 {
+#sect1 h3 {
   margin-bottom: 1rem;
   margin-top: 2.5rem;
   font-size: 1.5rem;
 }
-#charte h4 {
+#sect1 h4 {
   font-family: "Poetsen", sans-serif, sans-serif;
 }
 @media screen and (max-width: 768px) {
-  #charte h3 {
+  #sect1 h3 {
     font-size: 1.4rem;
   }
 }

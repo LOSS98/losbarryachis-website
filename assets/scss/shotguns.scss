@@ -1,0 +1,114 @@
+@import "variables";
+
+#sect1 {
+    padding: 120px 0 60px;
+}
+
+.search-container {
+    margin: 20px 0;
+    width: 100%;
+}
+
+.search-input {
+    width: 70%;
+    padding: 12px 20px;
+    border: 2px solid $color-primary;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: $color-secondary;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.shotguns-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.shotgun-card {
+    display: flex;
+    flex-direction: column;
+    background-color: $white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.shotgun-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.shotgun-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.shotgun-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.shotgun-card:hover .shotgun-image img {
+    transform: scale(1.05);
+}
+
+.shotgun-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.shotgun-content h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: $color-primary;
+    font-size: 22px;
+}
+
+.shotgun-content p {
+    margin-bottom: 15px;
+    color: $black;
+    flex-grow: 1;
+}
+
+.shotgun-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    color: $black;
+    font-size: 14px;
+}
+
+.shotgun-info ion-icon {
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.shotgun-card .btn {
+    align-self: flex-start;
+}
+
+.no-shotguns {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 40px;
+    background-color: $bg-color-secondary;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .shotguns-grid {
+        grid-template-columns: 1fr;
+    }
+}
