@@ -1,7 +1,7 @@
 <?php
-    require_once 'modules/common.php';
-    $nom_page = 'Promesses';
-    $nom_page_style = 'promesses';
+require_once 'modules/common.php';
+$nom_page = 'Promesses';
+$nom_page_style = 'promesses';
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -9,92 +9,231 @@
 <?php include 'modules/head.php'; ?>
 
 <body>
-    <?php include 'modules/header.php'; ?>
+<?php include 'modules/header.php'; ?>
 
-    <section id="sect1">
-        <div class="main-container">
-            <div class="content">
-                <h1>Nos valeurs et promesses</h1>
-                <div class="promesses">
-                    <div class="promesse">
-                        <div class="promesse-icon"><ion-icon name="shield-checkmark"></ion-icon></div>
-                        <h2>I. Sécurité</h2>
-                        <p>Au sein de notre liste, la question de la sécurité à l’INSA HDF est une valeur centrale.
-                            Un constat, les soirées en général et donc étudiantes sont des lieux en proies aux actes d'insécurité, il y a des faits avérés. 
-                        </p>
-                        <p>Notre objectif, rendre la vie étudiante sereine et poursuivre la démarche entamée par les précédents mandats. 
-                            Nous souhaitons déconstruire l’image grossière des écoles d’ingénieurs et les tabous à propos. 
-                        </p>
-                        <p>
-                            L’INSA HDF est notre maison le temps de notre formation, à nous de construire des bases saines pour les années futures, et pour que tous les étudiants puissent s’amuser en sécurité.
-                        </p>
-                        <p>
-                            De nombreuses mesures sont à mettre en places :
-                        </p>
-                        <ul>
-                            <li>Création d’un pôle prévention / sécurité</li>
-                            <li>Application d’une charte cotisant / staff</li>
-                            <li>Mise en places de protocoles</li>
-                            <li>Liste de contacts : MSE, associations.</li>
-                            <li>Publication de documents préventifs</li>
-                        </ul>
-                    </div>
-                    <div class="promesse">
-                        <div class="promesse-icon"><ion-icon name="star"></ion-icon></div>
-                        <h2>II. Animation</h2>
-                        <p>De grand pouvoir implique de grandes responsabilités. 
-                            L’INSA de l’ambiance ne doit pas démentir à sa réputation.
-                            Nous souhaitons renforcer et conserver le côté “famille” de l’école qui ne doit pas se perdre.
-                        </p>
-                        <p>Ce lien qui unit tous les étudiants de notre école est et sera notre plus grande force et ce qui nous démarquera des autres INSA et autres écoles d’ingénieur.</p>
-                        
-                        <p>Proposition d'événements régulièrement :</p> 
-                        <ul>
-                            <li>Soirées</li>
-                            <li>Activités en tous genres</li>
-                            <li>Accueillir des évènements inter-INSA</li>
-                            <li>Intégration des nouveaux étudiants et inclusion de tous les étudiants (great day / WEI / pôle inclusion)</li>
-                        </ul>
-                    </div>
-                    <div class="promesse">
-                        <div class="promesse-icon"><ion-icon name="people"></ion-icon></div>
-                        <h2>III. Associations et clubs</h2>
-                        <p>L’INSA HDF est riche de part sa vie étudiante, nous sommes convaincus que
-                            ces associations et clubs font partie intégrante de notre formation. 
-                        </p>
-                        <p>Ces associations et clubs sont les opportunités d’apprendre à connaître d’autres étudiants de diverses promotions tout en travaillant sur de nouvelles compétences et projets. </p>
-                        <p>Mise en place :</p>
-                         
-                        <ul>
-                            <li>Aider à la création de nouvelles associations</li>
-                            <li>Aider les associations à avoir de la visibilité sur leur projet</li>
-                            <li>Faciliter la communication entre les diverses associations</li>
-                        </ul>
-                    </div>
-                    <div class="promesse">
-                        <div class="promesse-icon"><ion-icon name="school"></ion-icon></div>
-                        <h2>IV. Orientation</h2>
-                        <p>
-                            L’INSA HDF est une école riche de contacts et d’opportunités. Il semble quelquefois difficile
-                             de se retrouver parmi toutes ses possibilités.
-                        </p>
-                           
-                        <p>
-                            Notre idée, vous apportez du soutien dans vos recherches en vous mettant à disposition toutes les informations. 
-                        </p>
-                        <p>Nous bénéficions également de plusieurs organismes proposant différents formations extra-scolaires : </p>
+<section id="sect1">
+    <div class="main-container">
+        <div class="content">
+            <h1>Nos valeurs et promesses</h1>
+            <div class="promesses">
+                <div class="promesse">
+                    <div class="promesse-icon"><ion-icon name="people-circle"></ion-icon></div>
+                    <h2>Team Bureau</h2>
 
-                        <ul>
-                            <li>ECIU</li>
-                            <li>EUNICE</li>
-                        </ul>
+                    <p><strong>Notre vision</strong></p>
+                    <p>
+                        Les valeurs et promesses du bureau sont simples : que tout fonctionne et que cela continue !
+                        Nous nous engageons à représenter la vie étudiante de l'INSA Hauts-de-France tout en gardant à cœur les valeurs qui nous sont chères : cohésion, rencontre, sérénité et festivités.
+                    </p>
 
-                    </div>
+                    <p><strong>Nos engagements</strong></p>
+                    <ul>
+                        <li>Dynamiser notre vie étudiante</li>
+                        <li>Organiser des événements en accord avec les valeurs de chacun de nos pôles</li>
+                        <li>Garantir que chaque étudiant puisse profiter pleinement de son expérience à l'INSA</li>
+                        <li>Créer un environnement où chacun se sent inclus et soutenu</li>
+                        <li>Travailler sans relâche pour que chaque initiative soit entendue et concrétisée</li>
+                    </ul>
+
+                    <p>
+                        Notre mission sera de faire un BDE à l'image des étudiants de HDF.
+                    </p>
+                </div>
+
+                <div class="promesse">
+                    <div class="promesse-icon"><ion-icon name="shield-checkmark"></ion-icon></div>
+                    <h2>Team Sécurité</h2>
+
+                    <p><strong>Notre vision</strong></p>
+                    <p>
+                        Nous nous engageons à garantir un environnement sûr et agréable pour tous les étudiants INSA.
+                        Nous organiserons des événements où la sécurité est la priorité absolue.
+                    </p>
+
+                    <p><strong>Nos engagements</strong></p>
+                    <ul>
+                        <li>Augmenter le nombre de formations en secourisme (HVSS et PSC1)</li>
+                        <li>Mettre en place un système de feedback après chaque soirée</li>
+                        <li>Développer la communication sur les dangers potentiels des soirées</li>
+                        <li>Appliquer équitablement les sanctions, pour le staff comme pour les participants</li>
+                        <li>Organiser des événements de sensibilisation entre les sessions de formation</li>
+                    </ul>
+
+                    <p>
+                        Ensemble, nous pouvons faire de chaque événement une expérience mémorable et sécurisée.
+                    </p>
+                </div>
+
+                <div class="promesse">
+                    <div class="promesse-icon"><ion-icon name="business"></ion-icon></div>
+                    <h2>Team Partenariats</h2>
+
+                    <p><strong>Notre vision</strong></p>
+                    <p>
+                        La team partenariat a pour objectif de développer plusieurs axes essentiels.
+                    </p>
+
+                    <p><strong>Nos engagements</strong></p>
+                    <ul>
+                        <li><strong>Culture :</strong> Rendre la culture plus accessible avec des réductions pour le cinéma, la lecture, les musées et les concerts</li>
+                        <li><strong>Commerce local :</strong> Négocier des réductions avec les commerces locaux pour soutenir l'économie tout en permettant aux étudiants de réaliser des économies</li>
+                        <li><strong>Événementiel :</strong> Collaborer avec les bars locaux et un grossiste pour des événements de qualité</li>
+                        <li><strong>Partenaires actuels :</strong> Maintenir de bonnes relations avec les partenaires du BDE</li>
+                        <li><strong>Santé :</strong> Renforcer nos liens avec la MSE et d'autres organismes de santé</li>
+                    </ul>
+                </div>
+
+                <div class="promesse">
+                    <div class="promesse-icon"><ion-icon name="megaphone"></ion-icon></div>
+                    <h2>Team Com</h2>
+
+                    <p><strong>Notre vision</strong></p>
+                    <p>
+                        Le pôle Communication promet d'être toujours une source d'informations sûres, réactives et transparentes pour les étudiants de l'INSA HDF.
+                    </p>
+
+                    <p><strong>Nos engagements</strong></p>
+                    <ul>
+                        <li>Maximiser la communication sur l'école et ses événements</li>
+                        <li>Informer sur les prochains événements de chaque pôle</li>
+                        <li>Communiquer sur les partenaires et les mouvements des assos et clubs</li>
+                        <li>Mettre l'accent sur la prévention pour assurer la sécurité de tous</li>
+                        <li>Garantir que les informations soient claires, précises et accessibles</li>
+                        <li>Créer un lien fort entre les étudiants et les différentes entités de l'INSA</li>
+                    </ul>
+                </div>
+
+                <div class="promesse">
+                    <div class="promesse-icon"><ion-icon name="color-palette"></ion-icon></div>
+                    <h2>Team BDA</h2>
+
+                    <p><strong>Notre vision</strong></p>
+                    <p>
+                        Le BDA continuera de promouvoir l'Art au sein de l'école. Nous avons comme ambition d'aider à l'indépendance (passage en asso.) du BDA.
+                    </p>
+
+                    <p><strong>Nos engagements</strong></p>
+                    <ul>
+                        <li>Soutenir le projet de salle de musique sur le nouveau bâtiment du campus</li>
+                        <li>Organiser répétitions, concerts, afterworks mensuels</li>
+                        <li>Proposer des événements plus fréquents pour animer le campus</li>
+                        <li>Développer les projets existants comme les Echos d'Été</li>
+                        <li>Collaborer avec la DREAM pour relancer les tremplins étudiants</li>
+                        <li>Soutenir le projet de M.Gallo pour l'orchestre d'harmonie de l'UPHF</li>
+                    </ul>
+
+                    <p>
+                        Dynamiser l'Art au sein de l'école apporte une touche de fraîcheur et de bonheur sur le campus et sur les événements.
+                    </p>
+                </div>
+
+                <div class="promesse">
+                    <div class="promesse-icon"><ion-icon name="football"></ion-icon></div>
+                    <h2>Team BDS/E-BDS</h2>
+
+                    <p><strong>Notre vision</strong></p>
+                    <p>
+                        Le BDS a cette année l'ambition de perpétuer les grands événements sportifs populaires de l'INSA tout en innovant dans l'organisation de nouveaux événements.
+                    </p>
+
+                    <p><strong>Nos engagements</strong></p>
+                    <ul>
+                        <li>Maintenir les événements phares : High Five, TOSS, Ovalies, séjour au ski</li>
+                        <li>Renforcer la communication du BDS pour favoriser les échanges entre étudiants sportifs</li>
+                        <li>Encourager les étudiants à s'investir dans de nouvelles disciplines</li>
+                        <li>Défendre activement les créneaux des équipes INSA et loisirs</li>
+                        <li>Accompagner les équipes dans leur fonctionnement quotidien et leurs compétitions</li>
+                        <li>Développer les ambitions e-sportives de l'école</li>
+                        <li>Participer aux événements inter-universitaires et inter-INSA</li>
+                    </ul>
+                </div>
+
+                <div class="promesse">
+                    <div class="promesse-icon"><ion-icon name="calendar"></ion-icon></div>
+                    <h2>Team Evenementiel</h2>
+
+                    <p><strong>Notre vision</strong></p>
+                    <p>
+                        Le pôle événementiel continuera de faire vibrer la vie étudiante au rythme de ses soirées. Notre ambition est claire : proposer des événements variés, inclusifs et mémorables pour tous.
+                    </p>
+
+                    <p><strong>Nos engagements</strong></p>
+                    <ul>
+                        <li>Organiser des soirées aux formats différents (avec ou sans alcool)</li>
+                        <li>Établir un partenariat étroit avec la team sécurité</li>
+                        <li>Collaborer avec les lieux emblématiques de la ville</li>
+                        <li>Proposer des événements réguliers hors campus</li>
+                        <li>Développer des projets inédits : week-end de désintégration, événements inter-INSA</li>
+                    </ul>
+
+                    <p>
+                        Animer la vie étudiante, rassembler les élèves, et faire de chaque événement une expérience à part entière : c'est ça notre objectif.
+                    </p>
+                </div>
+
+                <div class="promesse">
+                    <div class="promesse-icon"><ion-icon name="heart"></ion-icon></div>
+                    <h2>Team Inclusion</h2>
+
+                    <p><strong>Nos engagements</strong></p>
+                    <ul>
+                        <li><strong>Chaleur et Bienveillance :</strong> Accueillir les participant·e·s avec le sourire, pour que personne ne se sente mis·e de côté</li>
+                        <li><strong>Des événements pour tou·te·s :</strong> Organiser des soirées variées, adaptées à tous les goûts</li>
+                        <li><strong>Une équipe à l'écoute :</strong> Être disponible pendant les événements pour écouter et aider</li>
+                        <li><strong>Inclusion des FISA :</strong> Adapter nos événements au rythme d'alternance, avec un possible système de parrainage, des canaux de communication dédiés et un référent FISA dans l'équipe</li>
+                    </ul>
+
+                    <p>
+                        Les alternants apportent une richesse unique à notre communauté, et nous voulons leur donner toute leur place.
+                    </p>
+                </div>
+
+                <div class="promesse">
+                    <div class="promesse-icon"><ion-icon name="people"></ion-icon></div>
+                    <h2>Team Assos/Clubs</h2>
+
+                    <p><strong>Notre vision</strong></p>
+                    <p>
+                        À l'INSA Hauts-de-France, les associations et les clubs jouent un rôle essentiel dans la vie étudiante. Ils permettent à chacun de s'épanouir, de s'engager ou de se découvrir de nouvelles passions.
+                    </p>
+                    <p>
+                        Nous pensons que l'engagement associatif est un pilier de l'école, et en tant que BDE, notre rôle est de le soutenir, de le valoriser et de le rendre encore plus accessible à toutes et à tous.
+                    </p>
+
+                    <p><strong>Nos engagements</strong></p>
+                    <ul>
+                        <li>Accompagner la création de nouvelles associations ou clubs</li>
+                        <li>Valoriser les actions associatives (calendrier partagé, meilleure communication)</li>
+                        <li>Encourager la coopération entre associations (rencontres, partage de ressources)</li>
+                        <li>Organiser un forum associatif chaque semestre</li>
+                    </ul>
+
+                    <p>
+                        Notre volonté est de donner aux associations les moyens d'agir, de se développer et de rayonner pleinement dans la vie de l'école.
+                    </p>
+                </div>
+
+                <div class="promesse">
+                    <div class="promesse-icon"><ion-icon name="code"></ion-icon></div>
+                    <h2>BDI</h2>
+
+                    <p><strong>Nos engagements</strong></p>
+                    <ul>
+                        <li>Améliorer le site du BDE</li>
+                        <li>Développer une appli mobile pour centraliser les infos sur les événements</li>
+                        <li>Intégrer un système de shotgun efficace</li>
+                        <li>Aider les particuliers et assos à publier leurs applis sur l'App Store et le Play Store</li>
+                    </ul>
+
+                    <p>
+                        Et ce n'est que le début de nos projets numériques.
+                    </p>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <?php include 'modules/footer.php'; ?>
+<?php include 'modules/footer.php'; ?>
 </body>
 </html>

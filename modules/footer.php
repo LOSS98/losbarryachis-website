@@ -19,8 +19,8 @@
             <div class="footer-social">
                 <h4>Nos réseaux</h4>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/losbarryachis/" target="_blank" class="social-icon"><ion-icon name="logo-instagram"></ion-icon>@losbarryachis</a>
-                    <a href="https://www.youtube.com/" target="_blank" class="social-icon"><ion-icon name="logo-youtube"></ion-icon>@losbarryachis</a>
+                    <a href="https://www.instagram.com/losbarryachis" target="_blank" class="social-icon"><ion-icon name="logo-instagram"></ion-icon>@losbarryachis</a>
+                    <a href="https://www.youtube.com/@losbarryachis" target="_blank" class="social-icon"><ion-icon name="logo-youtube"></ion-icon>@LosBarryachis</a>
                     <a href="https://www.tiktok.com/@los.barryachis" target="_blank" class="social-icon"><ion-icon name="logo-tiktok"></ion-icon>@los.barryachis</a>
                 </div>
             </div>
@@ -34,7 +34,7 @@
             </div>
         </div>
         <div class="footer-copyright">
-            <p>&copy; <?= date('Y') ?> - Los Barryachis - <a href="cgu.php">CGU</a></p>
+            <p>&copy; <?= date('Y') ?> - Los Barryachis - <a class="color-terciary" href="cgu.php">CGU</a></p>
         </div>
     </div>
 </footer>

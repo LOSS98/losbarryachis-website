@@ -688,6 +688,8 @@ html #statistiques .main-container .stats-grid, body #statistiques .main-contain
   gap: 5rem;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
 }
 @media screen and (max-width: 768px) {
   html #statistiques .main-container .stats-grid, body #statistiques .main-container .stats-grid {
@@ -755,4 +757,15 @@ html #statistiques .main-container .stats-grid .statistique .description, body #
 * {
   scrollbar-width: thin;
   scrollbar-color: #FAAD47 #ece6d1;
+}
+html #statistiques .main-container .stats-grid,
+body #statistiques .main-container .stats-grid {
+  justify-content: center;
+  width: 100%;
+}
+
+html #statistiques .main-container,
+body #statistiques .main-container {
+  display: flex;
+  justify-content: center;
 }
