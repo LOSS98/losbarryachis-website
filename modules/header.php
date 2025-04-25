@@ -12,7 +12,7 @@
             <li><a href="promesses.php" <?php if($nom_page == "Promesses"){ echo 'class="onPage"'; }?>>Promesses</a></li>
         </ul>
         <div class="btn btn-primary" id="btn-taxi">
-            <a href="https://mexigo.fr" target="_blank">Mexigo <ion-icon name="car"></ion-icon></a>
+            <a href="https://mexigo.losbarryachis.fr" target="_blank">Mexigo <ion-icon name="car"></ion-icon></a>
         </div>
     </nav>
 </header>

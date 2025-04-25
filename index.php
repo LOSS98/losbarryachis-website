@@ -102,7 +102,7 @@ $nom_page_style = 'index';
                     <h2>Notre chorégraphie</h2>
                     <iframe
                             class="choree"
-                            src="https://player.cloudinary.com/embed/?cloud_name=dyd5gwrcv&public_id=b0wjgwmoqubpcgj4klt4&profile=mia"
+                            src="https://player.cloudinary.com/embed/?cloud_name=dyd5gwrcv&public_id=choree-mia_tu80zl&player[posterOptions][transformation][start_offset]=63"
                             allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
                             allowfullscreen
                             frameborder="0"
@@ -148,4 +148,11 @@ $nom_page_style = 'index';
 
 <?php include 'modules/footer.php'; ?>
 </body>
+<script>
+    const player = cloudinary.player('player', {
+        cloudName: 'dyd5gwrcv',
+        publicId: 'b0wjgwmoqubpcgj4klt4',
+        poster: 'https://public.losbarryachis.fr/shared/minia_choree.jpg'
+    });
+</script>
 </html>
