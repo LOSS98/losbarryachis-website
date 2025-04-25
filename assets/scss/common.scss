@@ -131,7 +131,6 @@ html, body {
         nav {
             position: relative;
             display: flex;
-            justify-content: space-between;
             align-items: center;
             transition: max-height .4s;
 
@@ -148,6 +147,7 @@ html, body {
                         flex-direction: column;
                         gap: 2rem;
                         margin-top: 4rem;
+                        margin-left: 0;
 
                         li {
                             opacity: 0;
@@ -182,7 +182,8 @@ html, body {
                     }
 
                     #btn-taxi {
-                        display: block;
+                        display: block;  
+                        margin-left: 0;
                         margin-top: 2rem;
                         opacity: 0;
                         animation: fadeIn .4s .8s forwards;
@@ -311,6 +312,7 @@ html, body {
                 margin: 0;
                 color: $white;
                 padding: .3rem 0 .1rem 0;
+                margin-left: 2rem;
 
                 @media screen and (max-width: 768px) {
                     display: none;
@@ -348,6 +350,10 @@ html, body {
             }
 
             #btn-taxi {
+                position: relative;
+                        display: block;
+                        margin-left: auto;;
+
                 @media screen and (max-width: 768px) {
                     display: none;
                 }
@@ -693,6 +699,7 @@ html, body {
             .stats-grid {
                 gap: 5rem;
                 display: flex;
+                justify-content: center;
                 flex-wrap: wrap;
 
                 @media screen and (max-width: 768px) {
