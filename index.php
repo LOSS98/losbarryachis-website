@@ -33,11 +33,11 @@ $nom_page_style = 'index';
         $profile_data = [
            'Achille.jpg' => 'Troubadour',
            'Amandine.jpg' => 'La farmeuse',
-           'Anna.jpg' => 'Anna',
+           'Anna.jpg' => 'Perpignangue',
            'Benjamin.jpg' => 'Benjos',
            'Brieuc.jpg' => 'Briix',
            'Célia.jpg' => 'C\'est Lia',
-           'Enzo.jpg' => 'Enzo',
+           'Enzo.jpg' => 'Delpypy',
            'Gwladys.jpg' => 'la gwlad',
            'Hugo.jpg' => 'Yougo',
            'Isma.jpg' => 'VIN COCA',
@@ -45,30 +45,30 @@ $nom_page_style = 'index';
            'Julian.jpg' => 'La Trompe',
            'Justin.jpg' => 'Tonton bof',
            'Khalil.jpg' => 'Khalilos',
-           'Lilian_AVM.jpg' => 'Lilian A.',
+           'Lilian_AVM.jpg' => 'Soueg',
            'Lilian_ME.jpg' => 'Coin Coin',
-           'Lilou.jpg' => 'Raloux',
-           'Lison.jpg' => 'Lison',
+           'Lilou.jpg' => 'Ralouxx',
+           'Lison.jpg' => '$pi€lman',
            'Loan.jpg' => 'Bonibard',
-           'Lorick.jpg' => 'Lorick',
-           'Louise.jpg' => 'Louise',
+           'Lorick.jpg' => 'Dessert',
+           'Louise.jpg' => 'Schtroumpfèt',
            'Lucas.jpg' => 'Piou Piou',
-           'Ludo.jpg' => 'Le pirate',
+           'Ludo.jpg' => 'le pirate',
            'Luka.jpg' => 'Le Croate ',
-           'Léo.jpg' => 'la 27/‘ème lettre',
+           'Léo.jpg' => '27ème lettre',
            'Macéo.jpg' => 'Douceur',
            'Marie.jpg' => 'Rasta Girl',
-           'Mathilde.jpg' => 'MathMath',
-           'Mathis.jpg' => 'Mathis',
-           'Max.jpg' => 'Maximenthe',
-           'Mia.jpg' => 'Mamie',
-           'Mikael.jpg' => 'Mikael',
+           'Mathilde.jpg' => 'Mathmath',
+           'Mathis.jpg' => 'Mortel',
+           'Max.jpg' => 'MaxiMenthe',
+           'Mia.jpg' => 'mamie',
+           'Mikael.jpg' => 'English plz',
            'Nils.jpg' => 'Monte Cristo',
            'Noémie.jpg' => 'Nono',
            'Paul.jpg' => 'Paulinho',
            'Pierre.jpg' => 'The Rock',
            'Pierrette.jpg' => 'Pierrette',
-           'Robin.jpg' => 'roro',
+           'Robin.jpg' => 'Pantoufle',
            'Thibaut.jpg' => 'Ec King',
            'Tim.jpg' => 'Miss 3A',
            'TOM_G.jpg' => 'FullBlackOut',
@@ -77,6 +77,7 @@ $nom_page_style = 'index';
            'Valentine_2.jpg' => 'Titine',
            'Zach.jpg' => 'Wikipédia',
            'Églantine.jpg' => 'Chuuuuut'
+
         ];
 
 
@@ -94,8 +95,10 @@ $nom_page_style = 'index';
     <div class="main-container">
         <div class="content">
             <h1>Nous voir et nous revoir</h1>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/09SE4u4JpGk?si=q5sqklbIQShrNyM1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        </div>
+            <div class="videos">
+                <iframe class="film" src="https://www.youtube.com/embed/kLWKK64aTSs?si=q5sqklbIQShrNyM1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <video class="choree" src="assets/video/choree.mov" poster="assets/video/minia_choree.webp" controls></video>
+            </div>
     </div>
 </section>
 
@@ -112,8 +115,8 @@ $nom_page_style = 'index';
                 <a href="https://www.uphf.fr/vie-campus/bien-vivre/centre-sante"target="_blank"class="partenaire">
                     <img src="assets/img/partenaires/mse.png" alt="Logo de MSE">
                 </a>
-                <a href="https://brasserielepresident.fr/"target="_blank"class="partenaire">
-                    <img src="assets/img/partenaires/lepresident.png" alt="Logo de Le Président">
+                <a href="https://www.jennyfer.com/"target="_blank"class="partenaire">
+                    <img src="assets/img/partenaires/jennyfer.png" alt="Logo de Jennyfer">
                 </a>
             </div>
             <div class="partenaires">
@@ -122,6 +125,10 @@ $nom_page_style = 'index';
                 </a>
                 <a href="https://www.facebook.com/p/FripChic-100087309256616" target="_blank"class="partenaire">
                     <img src="assets/img/partenaires/fripchic.png" alt="Logo de frip'chic">
+                </a>
+                <!--bierealamer-->
+                <a href="https://www.bierealamer.com/" target="_blank"class="partenaire">
+                    <img src="assets/img/partenaires/bierealamer.png" alt="Logo de bière à la mer">
                 </a>
             </div>
         </div>

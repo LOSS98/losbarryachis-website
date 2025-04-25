@@ -1,141 +1,164 @@
+@font-face {
+  font-family: "TanNimbus";
+  font-style: normal;
+  src: url("../fonts/tan-nimbus/tan-nimbus.otf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Cranberry";
+  font-style: normal;
+  src: url("../fonts/Cranberry/Cranberry.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "LondrinaSolid";
+  font-style: normal;
+  src: url("../fonts/LondrinaSolid/LondrinaSolid-Regular.ttf") format("truetype"), url("../fonts/LondrinaSolid/LondrinaSolid-Bold.ttf") format("truetype"), url("../fonts/LondrinaSolid/LondrinaSolid-Light.ttf") format("truetype"), url("../fonts/LondrinaSolid/LondrinaSolid-Thin.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Poetsen";
+  font-style: normal;
+  src: url("../fonts/poetsen-one/PoetsenOne-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
 #sect1 {
-    padding: 120px 0 60px;
+  padding: 120px 0 60px;
 }
 
 .back-btn {
-    margin-bottom: 20px;
-    display: inline-flex;
-    align-items: center;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
 }
 
 .back-btn ion-icon {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .shotgun-details {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 .shotgun-header {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 768px) {
-    .shotgun-header {
-        flex-direction: row;
-    }
+  .shotgun-header {
+    flex-direction: row;
+  }
 }
-
 .shotgun-image {
-    flex: 0 0 300px;
-    overflow: hidden;
+  flex: 0 0 300px;
+  overflow: hidden;
 }
 
 .shotgun-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .shotgun-info {
-    flex: 1;
-    padding: 25px;
+  flex: 1;
+  padding: 25px;
 }
 
 .shotgun-info h1 {
-    margin-top: 0;
-    color: var(--color-primary);
-    font-size: 28px;
+  margin-top: 0;
+  color: #FAAD47;
+  font-size: 28px;
 }
 
 .shotgun-description {
-    color: #444;
-    margin-bottom: 20px;
-    line-height: 1.6;
+  color: #3d3d3d;
+  margin-bottom: 20px;
+  line-height: 1.6;
 }
 
 .shotgun-meta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    color: #666;
-    font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  color: #3d3d3d;
+  font-size: 14px;
 }
 
 .shotgun-meta ion-icon {
-    margin-right: 5px;
-    vertical-align: middle;
+  margin-right: 5px;
+  vertical-align: middle;
 }
 
 .participants-section {
-    padding: 25px;
-    border-top: 1px solid #eee;
+  padding: 25px;
+  border-top: 1px solid #f1edd5;
 }
 
 .participants-section h2 {
-    margin-top: 0;
-    color: var(--color-primary);
+  margin-top: 0;
+  color: #FAAD47;
 }
 
 .table-container {
-    overflow-x: auto;
-    margin-top: 20px;
+  overflow-x: auto;
+  margin-top: 20px;
 }
 
 .participants-table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 .participants-table th,
 .participants-table td {
-    padding: 12px 15px;
-    text-align: left;
-    border-bottom: 1px solid #eee;
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #f1edd5;
 }
 
 .participants-table th {
-    background-color: var(--color-primary);
-    color: var(--color-primary);
-    font-weight: 600;
+  background-color: #FAAD47;
+  color: #FAAD47;
+  font-weight: 600;
 }
 
 .participants-table tbody tr:hover {
-    background-color: #f9f9f9;
+  background-color: #f1edd5;
 }
 
 .participants-table th:first-child {
-    width: 60px;
+  width: 60px;
 }
 
 .no-participants {
-    text-align: center;
-    padding: 30px;
-    background-color: #f8f8f8;
-    border-radius: 8px;
-    margin-top: 20px;
+  text-align: center;
+  padding: 30px;
+  background-color: #f1edd5;
+  border-radius: 8px;
+  margin-top: 20px;
 }
 
 .search-container {
-    margin: 20px 0;
-    width: 100%;
+  margin: 20px 0;
+  width: 100%;
 }
 
 .search-input {
-    width: 100%;
-    padding: 12px 20px;
-    border: 2px solid var(--color-primary);
-    border-radius: 8px;
-    font-size: 16px;
-    outline: none;
-    transition: all 0.3s ease;
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid #FAAD47;
+  border-radius: 8px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
 }
 
 .search-input:focus {
-    border-color: var(--color-secondary);
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-color: #8A35DF;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }

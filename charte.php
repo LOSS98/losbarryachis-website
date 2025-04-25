@@ -11,7 +11,7 @@
 <body>
     <?php include 'modules/header.php'; ?>
 
-    <section id="charte">
+    <section id="sect1">
         <div class="main-container">
             <div class="content">
                 <h2>Charte du bien-être et du vivre ensemble lors d’évènements festifs</h2>
