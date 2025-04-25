@@ -19,21 +19,22 @@
             <div class="footer-social">
                 <h4>Nos réseaux</h4>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/" target="_blank" class="social-icon"><ion-icon name="logo-instagram"></ion-icon>@losbarryachis</a>
-                    <a href="https://www.youtube.com/" target="_blank" class="social-icon"><ion-icon name="logo-youtube"></ion-icon>@losbarryachis</a>
-                    <a href="https://www.tiktok.com/" target="_blank" class="social-icon"><ion-icon name="logo-tiktok"></ion-icon>@los_barryachis</a>
+                    <a href="https://www.instagram.com/losbarryachis" target="_blank" class="social-icon"><ion-icon name="logo-instagram"></ion-icon>@losbarryachis</a>
+                    <a href="https://www.youtube.com/@losbarryachis" target="_blank" class="social-icon"><ion-icon name="logo-youtube"></ion-icon>@LosBarryachis</a>
+                    <a href="https://www.tiktok.com/@los.barryachis" target="_blank" class="social-icon"><ion-icon name="logo-tiktok"></ion-icon>@los.barryachis</a>
                 </div>
             </div>
             <div class="footer-app">
-                <h4>Télécharger l'appli</h4>
+                <h4>Site des Taxis</h4>
                 <div class="app-imgs">
-                    <a href="https://apps.apple.com/fr/app/id123456789" target="_blank" class="app-img"><img src="assets/img/store/appstore.png" alt=""></a>
-                    <a href=" https://public.losbarryachis.fr/shared/mexigo.apk" target="_blank" class="app-img"><img src="assets/img/store/android.webp" alt=""></a>
+                    <div class="btn btn-primary" id="btn-taxi">
+                        <a href="https://mexigo.losbarryachis.fr" target="_blank">Mexigo <ion-icon name="car"></ion-icon></a>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="footer-copyright">
-            <p>&copy; <?= date('Y') ?> - Los Barryachis - <a href="cgu.php">CGU</a></p>
+            <p>&copy; <?= date('Y') ?> - Los Barryachis - <a class="color-terciary" href="cgu.php">CGU</a></p>
         </div>
     </div>
 </footer>

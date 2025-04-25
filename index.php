@@ -31,54 +31,54 @@ $nom_page_style = 'index';
     <div class="carousel">
         <?php
         $profile_data = [
-           'Achille.jpg' => 'Troubadour',
-           'Amandine.jpg' => 'La farmeuse',
-           'Anna.jpg' => 'Perpignangue',
-           'Benjamin.jpg' => 'Benjos',
-           'Brieuc.jpg' => 'Briix',
-           'Célia.jpg' => 'C\'est Lia',
-           'Enzo.jpg' => 'Delpypy',
-           'Gwladys.jpg' => 'la gwlad',
-           'Hugo.jpg' => 'Yougo',
-           'Isma.jpg' => 'VIN COCA',
-           'Jeanne.jpg' => 'Atchoum',
-           'Julian.jpg' => 'La Trompe',
-           'Justin.jpg' => 'Tonton bof',
-           'Khalil.jpg' => 'Khalilos',
-           'Lilian_AVM.jpg' => 'Soueg',
-           'Lilian_ME.jpg' => 'Coin Coin',
-           'Lilou.jpg' => 'Ralouxx',
-           'Lison.jpg' => '$pi€lman',
-           'Loan.jpg' => 'Bonibard',
-           'Lorick.jpg' => 'Dessert',
-           'Louise.jpg' => 'Schtroumpfèt',
-           'Lucas.jpg' => 'Piou Piou',
-           'Ludo.jpg' => 'le pirate',
-           'Luka.jpg' => 'Le Croate ',
-           'Léo.jpg' => '27ème lettre',
-           'Macéo.jpg' => 'Douceur',
-           'Marie.jpg' => 'Rasta Girl',
-           'Mathilde.jpg' => 'Mathmath',
-           'Mathis.jpg' => 'Mortel',
-           'Max.jpg' => 'MaxiMenthe',
-           'Mia.jpg' => 'mamie',
-           'Mikael.jpg' => 'English plz',
-           'Nils.jpg' => 'Monte Cristo',
-           'Noémie.jpg' => 'Nono',
-           'Paul.jpg' => 'Paulinho',
-           'Pierre.jpg' => 'The Rock',
-           'Pierrette.jpg' => 'Pierrette',
-           'Robin.jpg' => 'Pantoufle',
-           'Thibaut.jpg' => 'Ec King',
-           'Tim.jpg' => 'Miss 3A',
-           'TOM_G.jpg' => 'FullBlackOut',
-           'tom_p.jpg' => 'Ptit Tom',
-           'Ugo_2.jpg' => 'El PronoLoco',
-           'Valentine_2.jpg' => 'Titine',
-           'Zach.jpg' => 'Wikipédia',
-           'Églantine.jpg' => 'Chuuuuut'
+       'Achille.jpg' => 'Troubadour',
+       'Amandine.jpg' => 'La farmeuse',
+       'Anna.jpg' => 'Perpignangue',
+       'Benjamin.jpg' => 'Benjos',
+       'Brieuc.jpg' => 'Briix',
+       'Célia.jpg' => 'C\'est Lia',
+       'Enzo.jpg' => 'Delpypy',
+       'Gwladys.jpg' => 'la gwlad',
+       'Hugo.jpg' => 'Yougo',
+       'Isma.jpg' => 'VIN COCA',
+       'Jeanne.jpg' => 'Atchoum',
+       'Julian.jpg' => 'La Trompe',
+       'Justin.jpg' => 'Tonton bof',
+       'Khalil.jpg' => 'Khalilos',
+       'Lilian_AVM.jpg' => 'Soueg',
+       'Lilian_ME.jpg' => 'Coin Coin',
+       'Lilou.jpg' => 'Raloux',
+       'Lison.jpg' => 'Cresus',
+       'Loann.jpg' => 'Bonibard',
+       'Lorick.jpg' => 'Dessert',
+       'Louise.jpg' => 'Schtroumpfette',
+       'Lucas.jpg' => 'Piou Piou',
+       'Ludo.jpg' => 'Le pirate',
+       'Luka.jpg' => 'Le Croate ',
+       'Léo.jpg' => 'la 27ème lettre',
+       'Macéo.jpg' => 'Douceur',
+       'Marie.jpg' => 'Rasta Girl',
+       'Mathilde.jpg' => 'MathMath',
+       'Mathis.jpg' => 'Mortel',
+       'Max.jpg' => 'Maximenthe',
+       'Mia.jpg' => 'Mamie',
+       'Mikael.jpg' => 'English plz',
+       'Nils.jpg' => 'Monte Cristo',
+       'Noémie.jpg' => 'Nono',
+       'Paul.jpg' => 'Paulinho',
+       'Pierre.jpg' => 'The Rock',
+       'Pierrette.jpg' => 'Pierrette',
+       'Robin.jpg' => 'Pantoufle',
+       'Thibaut.jpg' => 'Ec King',
+       'Tim.jpg' => 'Miss 3A',
+       'TOM_G.jpg' => 'FullBlackOut',
+       'tom_p.jpg' => 'Ptit Tom',
+       'Ugo_2.jpg' => 'El PronoLoco',
+       'Valentine_2.jpg' => 'Titine',
+       'Zach.jpg' => 'Wikipédia',
+       'Églantine.jpg' => 'Chuuuuut'
+    ];
 
-        ];
 
 
         foreach ($profile_data as $image => $nickname) {
@@ -97,8 +97,19 @@ $nom_page_style = 'index';
             <h1>Nous voir et nous revoir</h1>
             <div class="videos">
                 <iframe class="film" src="https://www.youtube.com/embed/kLWKK64aTSs?si=q5sqklbIQShrNyM1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <video class="choree" src="assets/video/choree.mov" poster="assets/video/minia_choree.webp" controls></video>
+
+                <div class="choree-container">
+                    <h2>Notre chorégraphie</h2>
+                    <iframe
+                            class="choree"
+                            src="https://player.cloudinary.com/embed/?cloud_name=dyd5gwrcv&public_id=choree-mia_tu80zl&player[posterOptions][transformation][start_offset]=63"
+                            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                            allowfullscreen
+                            frameborder="0"
+                    ></iframe>
+                </div>
             </div>
+        </div>
     </div>
 </section>
 
