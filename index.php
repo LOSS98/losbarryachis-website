@@ -98,19 +98,6 @@ $nom_page_style = 'index';
             <div class="videos">
                 <iframe class="film" src="https://www.youtube.com/embed/kLWKK64aTSs?si=q5sqklbIQShrNyM1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
-
-            <div class="videos">
-                <div class="content choree-container">
-                    <h1>Notre chorégraphie</h1>
-                    <iframe
-                            class="choree"
-                            src="https://player.cloudinary.com/embed/?cloud_name=dyd5gwrcv&public_id=choree-mia_tu80zl&player[posterOptions][transformation][start_offset]=63"
-                            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-                            allowfullscreen
-                            frameborder="0"
-                    ></iframe>
-                </div>
-            </div>
         </div>
     </div>
 </section>
