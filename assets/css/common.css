@@ -339,9 +339,52 @@ html header nav ul li a::after, body header nav ul li a::after {
 html header nav ul li a.onPage::after, html header nav ul li a:hover::after, body header nav ul li a.onPage::after, body header nav ul li a:hover::after {
   width: 60%;
 }
+html header nav, body header nav {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: max-height 0.4s;
+}
+
+html header nav #btn-taxi, body header nav #btn-taxi {
+  display: block !important;
+  position: relative;
+  margin-left: auto;
+}
+
 @media screen and (max-width: 768px) {
+  html header nav, body header nav {
+    max-height: 0vh;
+  }
+
+  html header nav .logo-img, body header nav .logo-img {
+    position: absolute;
+    width: 70%;
+    left: 40%;
+    top: -1.5rem;
+    transform: translateX(-50%);
+  }
+
   html header nav #btn-taxi, body header nav #btn-taxi {
-    display: none;
+    position: absolute;
+    top: -1.5rem;
+    right: 0;
+    display: block !important;
+    margin-top: 0;
+    transform: scale(0.85);
+  }
+
+  html header nav #btn-taxi a, body header nav #btn-taxi a {
+    padding: 0.6rem 1rem;
+  }
+
+  html header nav.active #btn-taxi, body header nav.active #btn-taxi {
+    position: relative;
+    top: auto;
+    right: auto;
+    margin-top: 2rem;
+    transform: none;
   }
 }
 html section, body section {

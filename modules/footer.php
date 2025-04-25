@@ -25,10 +25,10 @@
                 </div>
             </div>
             <div class="footer-app">
-                <h4>Télécharger l'appli</h4>
+                <h4>Site des Taxis</h4>
                 <div class="app-imgs">
-                    <a href="https://apps.apple.com/fr/app/id123456789" target="_blank" class="app-img"><img src="assets/img/store/appstore.png" alt=""></a>
-                    <a href=" https://public.losbarryachis.fr/shared/mexigo.apk" target="_blank" class="app-img"><img src="assets/img/store/android.webp" alt=""></a>
+                    <a href="https://mexigo.fr" target="_blank" class="app-img"><img src="assets/img/store/appstore.png" alt=""></a>
+                    <a href="https://mexigo.fr" target="_blank" class="app-img"><img src="assets/img/store/android.webp" alt=""></a>
                 </div>
             </div>
         </div>

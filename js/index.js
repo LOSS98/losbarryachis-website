@@ -176,7 +176,7 @@ $(document).ready(function(){
         setTimeout(function() {
             $img.css('visibility', 'visible');
             $item.find('.nickname').css('visibility', 'visible');
-        }, 2500);
+        }, 10000);
     });
 
     $('.videos .choree').attr('poster', 'assets/video/minia_choree.webp');
