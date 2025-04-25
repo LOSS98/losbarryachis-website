@@ -97,7 +97,15 @@ $nom_page_style = 'index';
             <h1>Nous voir et nous revoir</h1>
             <div class="videos">
                 <iframe class="film" src="https://www.youtube.com/embed/kLWKK64aTSs?si=q5sqklbIQShrNyM1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <video class="choree" src="assets/video/choree.mov" poster="assets/video/minia_choree.webp" controls></video>
+                <iframe
+                        src="https://player.cloudinary.com/embed/?cloud_name=dyd5gwrcv&public_id=b0wjgwmoqubpcgj4klt4&profile=mia"
+                        width="640"
+                        height="360"
+                        style="height: auto; width: 100%; aspect-ratio: 9 / 16;"
+                        allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                        allowfullscreen
+                        frameborder="0"
+                ></iframe>
             </div>
     </div>
 </section>

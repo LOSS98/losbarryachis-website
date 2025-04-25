@@ -12,7 +12,7 @@
             <li><a href="promesses.php" <?php if($nom_page == "Promesses"){ echo 'class="onPage"'; }?>>Promesses</a></li>
         </ul>
         <div class="btn btn-primary" id="btn-taxi">
-            <a href="#" download>Télécharger l'appli <ion-icon name="phone-portrait"></ion-icon></a>
+            <a href="#" download>Mexigo <ion-icon name="car_outline"></ion-icon></a>
         </div>
     </nav>
 </header>
