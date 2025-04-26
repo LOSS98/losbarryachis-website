@@ -15,7 +15,7 @@ $(document).ready(function(){
             {
                 breakpoint: 1024,
                 settings: {
-                    slidesToShow: 6
+                    slid3how: 6
                 }
             },
             {
