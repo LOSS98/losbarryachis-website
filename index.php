@@ -19,8 +19,9 @@ $nom_page_style = 'index';
             <p><strong>Nous vous souhaitons à toutes et tous une très bonne semaine de campagne.</strong></p>
             <div class="btns">
                 <a href="programme.php" class="btn btn-secondary">Voir le programme <ion-icon name="calendar"></ion-icon></a>
-                <a href="shotguns.php" class="btn btn-primary">Shotguns <ion-icon name="rocket"></ion-icon></a>
-                <a href="teams.php" class="btn btn-terciary">Nos teams <ion-icon name="people"></ion-icon></a>
+                <a href="shotguns.php" class="btn btn-terciary">Shotguns <ion-icon name="rocket"></ion-icon></a>
+                <a href="teams.php" class="btn btn-primary btn-team">Nos teams <ion-icon name="people"></ion-icon></a>
+                <a href="https://mexigo.losbarryachis.fr" class="btn btn-primary btn-taxi" target="_blank">Taxi Mexigo <ion-icon name="car"></ion-icon></a>
             </div>
 
         </div>
@@ -97,19 +98,13 @@ $nom_page_style = 'index';
             <h1>Nous voir et nous revoir</h1>
             <div class="videos">
                 <iframe class="film" src="https://www.youtube.com/embed/kLWKK64aTSs?si=q5sqklbIQShrNyM1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-
-            <div class="videos">
-                <div class="content choree-container">
-                    <h1>Notre chorégraphie</h1>
-                    <iframe
-                            class="choree"
-                            src="https://player.cloudinary.com/embed/?cloud_name=dyd5gwrcv&public_id=choree-mia_tu80zl&player[posterOptions][transformation][start_offset]=63"
-                            allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
-                            allowfullscreen
-                            frameborder="0"
-                    ></iframe>
-                </div>
+                <iframe
+                        class="choree"
+                        src="https://player.cloudinary.com/embed/?cloud_name=dyd5gwrcv&public_id=choree-mia_tu80zl&player[posterOptions][transformation][start_offset]=63"
+                        allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+                        allowfullscreen
+                        frameborder="0"
+                ></iframe>
             </div>
         </div>
     </div>
