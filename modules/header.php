@@ -11,6 +11,5 @@
             <li><a href="teams.php" <?php if($nom_page == "Teams"){ echo 'class="onPage"'; }?>>Teams</a></li>
             <li><a href="promesses.php" <?php if($nom_page == "Promesses"){ echo 'class="onPage"'; }?>>Promesses</a></li>
         </ul>
-        <a href="https://mexigo.losbarryachis.fr" class="btn btn-primary" id="btn-taxi" target="_blank">Taxi Mexigo <ion-icon name="car"></ion-icon></a>
     </nav>
 </header>
