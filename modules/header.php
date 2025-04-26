@@ -9,6 +9,7 @@
             <li><a href="shotguns.php" <?php if($nom_page == "Shotguns"){ echo 'class="onPage"'; }?>>Shotguns</a></li>
             <li><a href="programme.php" <?php if($nom_page == "Programme"){ echo 'class="onPage"'; }?>>Programme</a></li>
             <li><a href="teams.php" <?php if($nom_page == "Teams"){ echo 'class="onPage"'; }?>>Teams</a></li>
+            <li><a href="charte.php" <?php if($nom_page == "Teams"){ echo 'class="onPage"'; }?>>Sécurité</a></li>
             <li><a href="promesses.php" <?php if($nom_page == "Promesses"){ echo 'class="onPage"'; }?>>Promesses</a></li>
         </ul>
     </nav>
