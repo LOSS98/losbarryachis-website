@@ -27,9 +27,7 @@
             <div class="footer-app">
                 <h4>Site des Taxis</h4>
                 <div class="app-imgs">
-                    <div class="btn btn-primary" id="btn-taxi">
-                        <a href="https://mexigo.losbarryachis.fr" target="_blank">Mexigo <ion-icon name="car"></ion-icon></a>
-                    </div>
+                    <a href="https://mexigo.losbarryachis.fr" class="btn btn-primary" target="_blank">Taxi Mexigo <ion-icon name="car"></ion-icon></a>
                 </div>
             </div>
         </div>
