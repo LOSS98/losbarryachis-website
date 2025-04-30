@@ -24,12 +24,6 @@
                     <a href="https://www.tiktok.com/@los.barryachis" target="_blank" class="social-icon"><ion-icon name="logo-tiktok"></ion-icon>@los.barryachis</a>
                 </div>
             </div>
-            <div class="footer-app">
-                <h4>Site des Taxis</h4>
-                <div class="app-imgs">
-                    <a href="https://mexigo.losbarryachis.fr" class="btn btn-primary" target="_blank">Taxi Mexigo <ion-icon name="car"></ion-icon></a>
-                </div>
-            </div>
         </div>
         <div class="footer-copyright">
             <p>&copy; <?= date('Y') ?> - Los Barryachis - <a class="color-terciary" href="cgu.php">CGU</a></p>
